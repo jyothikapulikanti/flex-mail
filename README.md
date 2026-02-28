@@ -4,7 +4,7 @@
 MailFlow is a Gmail-inspired full-stack email management system built using Java and Firebase.
 It allows users to securely send, receive, and manage emails with a clean, responsive UI.
 
-🚀 Features
+🚀 # Features
 
 User Authentication (Firebase Auth)
 
