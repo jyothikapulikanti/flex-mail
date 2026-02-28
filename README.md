@@ -1,4 +1,4 @@
-#Flex-mail
+# Flex-mail
 
 
 MailFlow is a Gmail-inspired full-stack email management system built using Java and Firebase.
