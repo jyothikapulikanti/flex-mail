@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<title>Flex-Mail</title>
+
+<link rel="icon" href="https://c.tenor.com/9_X3DEtd-xoAAAAi/gmail.gif">
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<div class="header__left">
+<span class="material-icons">menu</span>
+<img src="logo.png">
+</div>
+
+<div class="header__middle">
+<span class="material-icons">search</span>
+<input type="text" placeholder="Search mail">
+<span class="material-icons">arrow_drop_down</span>
+</div>
+
+<div class="header__right">
+<span class="material-icons">apps</span>
+<span class="material-icons">notifications</span>
+<span class="material-icons">account_circle</span>
+</div>
+
+</div>
+
+<!-- MAIN BODY -->
+
+<div class="main__body">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<button class="sidebar__compose">
+<span class="material-icons">add</span>
+Compose
+</button>
+
+<div class="sidebarOption sidebarOption__active" id="inboxBtn">
+<span class="material-icons">inbox</span>
+<h3>Inbox</h3>
+</div>
+
+<div class="sidebarOption" id="starredBtn">
+<span class="material-icons">star</span>
+<h3>Starred</h3>
+</div>
+
+<div class="sidebarOption" id="snoozedBtn">
+<span class="material-icons">access_time</span>
+<h3>Snoozed</h3>
+</div>
+
+<div class="sidebarOption" id="importantBtn">
+<span class="material-icons">label_important</span>
+<h3>Important</h3>
+</div>
+
+<div class="sidebarOption" id="sentBtn">
+<span class="material-icons">near_me</span>
+<h3>Sent</h3>
+</div>
+
+<div class="sidebarOption" id="draftBtn">
+<span class="material-icons">note</span>
+<h3>Drafts</h3>
+</div>
+
+<div class="sidebarOption">
+<span class="material-icons">expand_more</span>
+<h3>More</h3>
+</div>
+
+<div class="sidebar__footer">
+<div class="sidebar__footerIcons">
+<span class="material-icons">person</span>
+<span class="material-icons">duo</span>
+<span class="material-icons">phone</span>
+</div>
+</div>
+
+</div>
+
+<!-- EMAIL LIST -->
+
+<div class="emailList">
+
+<div class="emailList__settings">
+
+<div class="emailList__settingsLeft">
+<input type="checkbox">
+<span class="material-icons">arrow_drop_down</span>
+<span class="material-icons">redo</span>
+<span class="material-icons">more_vert</span>
+</div>
+
+<div class="emailList__settingsRight">
+<span class="material-icons">chevron_left</span>
+<span class="material-icons">chevron_right</span>
+<span class="material-icons">keyboard_hide</span>
+<span class="material-icons">settings</span>
+</div>
+
+</div>
+
+<div class="emailList__sections">
+
+<div class="section section__selected">
+<span class="material-icons">inbox</span>
+<h4>Primary</h4>
+</div>
+
+<div class="section">
+<span class="material-icons">people</span>
+<h4>Social</h4>
+</div>
+
+<div class="section">
+<span class="material-icons">local_offer</span>
+<h4>Promotions</h4>
+</div>
+
+</div>
+
+<!-- EMAIL CONTAINER -->
+
+<div class="emailList__list">
+
+<div class="noMail">
+<span class="material-icons">mail</span>
+<p>No messages yet</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- COMPOSE BOX -->
+
+<div class="composeBox" id="composeBox">
+
+<div class="composeHeader">
+<h3>New Message</h3>
+<span class="material-icons" id="closeCompose">close</span>
+</div>
+
+<input type="text" id="receiver" placeholder="To">
+<input type="text" id="subject" placeholder="Subject">
+
+<textarea id="message" placeholder="Write your message"></textarea>
+
+<div class="composeFooter">
+
+<input type="file" id="attachment" hidden>
+
+<span class="material-icons attachIcon" id="attachFile">
+attach_file
+</span>
+
+<span id="fileName"></span>
+
+<button onclick="sendMail()">Send</button>
+
+</div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
+
